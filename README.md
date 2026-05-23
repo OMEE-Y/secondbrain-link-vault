@@ -1,3 +1,11 @@
+# Link Vault
+
+A minimal full-stack app to save, organize, and manage useful links in one place. Built as a personal “second brain” to keep track of resources without losing them across chats, tabs, and bookmarks.
+
+
+
+## Preview
+
 <table align="center">
   <tr>
     <td align="center">
@@ -11,20 +19,16 @@
   </tr>
 </table>
 
-# Link Vault
-
-A minimal full-stack application to save, organize, and manage useful links in one place. Built as a personal “second brain” to keep track of resources efficiently.
-
 ---
 
 ## Features
 
-* User authentication using JWT
-* Create, read, and delete links
-* Tag-based organization
-* Search and filter functionality
-* Responsive and clean UI
-* Secure backend with production-ready practices
+- JWT-based authentication
+- Create, view, and delete links
+- Organize links with tags
+- Search and filter functionality
+- Responsive and clean UI
+- Secure backend with production-ready practices
 
 ---
 
@@ -32,66 +36,66 @@ A minimal full-stack application to save, organize, and manage useful links in o
 
 ### Frontend
 
-* Next.js
-* React
-* Tailwind CSS
-* Lucide Icons
-* Phosphor Icons
+- Next.js
+- React
+- Tailwind CSS
+- Lucide Icons
+- Phosphor Icons
 
 ### Backend
 
-* Node.js
-* Express.js
-* MongoDB with Mongoose
-* JWT for authentication
-* bcrypt for password hashing
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT Authentication
+- bcrypt for password hashing
+- zod for validation
 
 ---
 
 ## Project Structure
 
-```
-/frontend   -> Next.js application
-/server    -> Express server
-```
-
----
-
-## Setup Instructions
-
-### 1. Clone the repository
-
 ```bash
-git clone https://github.com/OMEE-Y/secondbrain-link-vault-.git
-cd secondbrain-link-vault-
+/frontend   # Next.js frontend
+/server     # Express.js backend
 ```
 
 ---
 
-### 2. Backend Setup
+## Why I Built This
+
+One of my friends used to save useful resources everywhere, WhatsApp chats, Telegram messages, browser bookmarks, random notes, and even screenshots. After a few weeks, finding those links again became frustrating because everything was scattered across different platforms.
+
+I noticed I had the same problem while learning web development and DSA. Useful articles, tools, and resources kept getting lost over time.
+
+So I built Link Vault, a simple place to save and organize everything properly, with tags, search, and quick access whenever needed.
+
+---
+
+## Backend Setup
 
 ```bash
 cd server
 npm install
 ```
 
-Create a `.env` file in the backend folder:
+Create a `.env` file inside the `server` folder:
 
-```
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
-Run the backend:
+Run the backend server:
 
 ```bash
-node index.js
+node server.js
 ```
 
 ---
 
-### 3. Frontend Setup
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -101,47 +105,9 @@ npm run dev
 
 ---
 
-## API Endpoints
-
-### Authentication
-
-* `POST /register`
-  Create a new user
-
-* `POST /login`
-  Authenticate user and return JWT
-
----
-
-### Links
-
-* `GET /links`
-  Fetch all user links
-
-* `POST /links`
-  Add a new link
-
-* `DELETE /links/:id`
-  Delete a link
-
----
-
-
-
 ## Live Demo
 
-[https://secondbrain-link-vault.vercel.app](https://secondbrain-link-vault.vercel.app)
+[Link Vault Live Demo](https://secondbrain-link-vault.vercel.app)
 
 ---
-
-## Future Improvements
-
-* Folder or collection system
-* Link previews using metadata
-* Dark mode support
-* Sharing links with others
-
----
-
-
 
